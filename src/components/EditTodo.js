@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
-const TodoForm = ({ setTodo }) => {
-  const [value, setValue] = useState();
+const EditTodo = ({ editTodo, task }) => {
+  const [value, setValue] = useState(task.task);
 
   function handleTodoFormSubmit(event) {
     event.preventDefault();
-    setTodo(value);
+    editTodo(value, task.id);
     setValue("");
   }
   return (
@@ -13,7 +13,7 @@ const TodoForm = ({ setTodo }) => {
       <input
         name='todo'
         type='text'
-        value={value || ""}
+        value={value}
         onChange={(txt) => setValue(txt.target.value)}
         className='py-3 px-6 font-IBM font-normal outline-none border-none rounded-lg bg-vendant-darker text-white italic placeholder:italic placeholder:text-sm '
         placeholder='add some todo...'
@@ -25,4 +25,4 @@ const TodoForm = ({ setTodo }) => {
   );
 };
 
-export default TodoForm;
+export default EditTodo;
