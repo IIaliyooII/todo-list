@@ -15,10 +15,11 @@ const TodoForm = ({ setTodo }) => {
         type='text'
         value={value || ""}
         onChange={(txt) => setValue(txt.target.value)}
-        className='py-3 px-6 font-IBM font-normal outline-none border-none rounded-lg bg-vendant-darker text-white italic placeholder:italic placeholder:text-sm '
+        className='py-3 px-6 font-IBM font-normal outline-none border-none rounded-lg bg-vendant-darker text-white italic placeholder:italic placeholder:text-sm shadow-lg'
         placeholder='add some todo...'
+        autoComplete='off'
       />
-      <button className='p-4 bg-vendant-darker text-white rounded-lg hover:bg-verdant-green hover:text-black duration-150'>
+      <button className='p-4 bg-vendant-darker text-white rounded-lg hover:bg-verdant-green hover:text-black duration-150 shadow-lg'>
         <AiOutlinePlus />
       </button>
     </form>

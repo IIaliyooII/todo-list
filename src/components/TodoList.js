@@ -3,7 +3,7 @@ import { AiFillCheckCircle, AiFillDelete, AiFillEdit } from "react-icons/ai";
 
 const TodoList = ({ task, checkHandler, deleteHandler, editHandler }) => {
   return (
-    <div className='flex justify-between items-center gap-4 rounded-md text-white p-2 mb-2 bg-vendant-darker overflow-hidden'>
+    <div className='flex justify-between items-center gap-4 rounded-md text-white p-2 mb-2 bg-vendant-darker overflow-hidden shadow-md'>
       <p className={task.completed ? "text-slate-300 line-through" : "text-white"}>{task.task} </p>
 
       <div className='flex gap-2 '>
