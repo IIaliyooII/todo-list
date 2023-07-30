@@ -1,3 +1,3 @@
 # Getting Started with React And Tailwindcss
 
-Todo List [Demo](https://iialiyooii.github.io/todo-list/).
+Countdown Timer [Demo](https://iialiyooii.github.io/countdown-timer/).
